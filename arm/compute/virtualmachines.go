@@ -185,7 +185,7 @@ func (client VirtualMachinesClient) CreateOrUpdatePreparer(resourceGroupName str
 	}
 
 	queryParameters := map[string]interface{}{
-		"api-version": client.APIVersion,
+		"api-version": "2019-03-01",
 	}
 
 	preparer := autorest.CreatePreparer(

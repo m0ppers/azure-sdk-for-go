@@ -19,10 +19,11 @@ package compute
 // regenerated.
 
 import (
+	"net/http"
+
 	"github.com/Azure/go-autorest/autorest"
 	"github.com/Azure/go-autorest/autorest/date"
 	"github.com/Azure/go-autorest/autorest/to"
-	"net/http"
 )
 
 // CachingTypes enumerates the values for caching types.
@@ -833,6 +834,8 @@ type VirtualMachineProperties struct {
 	InstanceView       *VirtualMachineInstanceView `json:"instanceView,omitempty"`
 	LicenseType        *string                     `json:"licenseType,omitempty"`
 	VMID               *string                     `json:"vmId,omitempty"`
+	Priority           *string                     `json:"priority,omitempty"`
+	EvictionPolicy     *string                     `json:"evictionPolicy,omitempty"`
 }
 
 // VirtualMachineScaleSet is describes a Virtual Machine Scale Set.
